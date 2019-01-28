@@ -96,7 +96,7 @@ FreeSurfer, git, DeepLearningのためのPythonの各種ライブラリを自前
 
 	- [3D Sicer](https://download.slicer.org/)
  
-1. GitHubの設定
+2. GitHubの設定
 チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
 
 - gitディレクトリを準備
@@ -118,8 +118,7 @@ git clone https://github.com/kytk/abis-201903.git
 
 UsernameとPasswordを聞かれます。受講者メールに記載されているUsernameとPasswordを記載してください。 そうするとダウンロードが始まります。ダウンロードは約5GBありますのでしばらくかかります。
 
-
-1. パスの設定
+3. パスの設定
 
 - 過去のFreeSurferチュートリアルに参加された方々
 
@@ -151,10 +150,10 @@ echo ' ' >> ~/.bash_profile
 - export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
 - 空白スペースと改行を .bash_profile に追記しなさい。
 
-1. ターミナルを再起動
+4. ターミナルを再起動
 ターミナルを一度閉じ、そのうえでターミナルを再度起動します。
 
-1. プログラムの起動確認
+5. プログラムの起動確認
 ターミナルから以下をタイプしてください。
 
 ```
