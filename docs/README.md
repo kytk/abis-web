@@ -90,6 +90,7 @@ FreeSurfer, git, DeepLearningのためのPythonの各種ライブラリを自前
 ### (2) 自前のmacOS環境で参加する場合
 
 1. ソフトウェアのインストール
+
 ご自身でMacを操作する方は、下記を参考に、FreeSurfer, 3D Slicer と DeepLearningに必要な以下のPythonツールを各自セットアップしてきてください。
         
 	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
@@ -97,9 +98,11 @@ FreeSurfer, git, DeepLearningのためのPythonの各種ライブラリを自前
 	- [3D Sicer](https://download.slicer.org/)
  
 2. GitHubの設定
+
 チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
 
 - gitディレクトリを準備
+
 ホームディレクトリの下にgitディレクトリを準備します。
 ターミナルを立ち上げ、以下をタイプしてください。
 
@@ -109,6 +112,7 @@ mkdir git
 ```
 
 - チュートリアル用スクリプトのリポジトリをダウンロード
+
 以下をそのままコピー＆ペーストしてください。
 
 ```
@@ -145,15 +149,18 @@ echo ' ' >> ~/.bash_profile
 ```
 
 ちなみに上記のコードは以下の意味です。
+
 - 空白スペースと改行を .bash_profile に追記しなさい。
 - #PATH for fs-scripts という文字列を .bash_profile に追記しなさい。
 - export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
 - 空白スペースと改行を .bash_profile に追記しなさい。
 
 4. ターミナルを再起動
+
 ターミナルを一度閉じ、そのうえでターミナルを再度起動します。
 
 5. プログラムの起動確認
+
 ターミナルから以下をタイプしてください。
 
 ```
@@ -166,6 +173,7 @@ fs_check_6.0.sh
 
 	
 ## 問い合わせ
+
 準備がうまくいかない時のために、問い合わせフォームを準備しています
 。こちらからご質問ください。数日以内に担当者から返信させていただきます。
 
