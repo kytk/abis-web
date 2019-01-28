@@ -146,11 +146,10 @@ echo ' ' >> ~/.bash_profile
 ```
 
 ちなみに上記のコードは以下の意味です。
-
-    - 空白スペースと改行を .bash_profile に追記しなさい。
-    - #PATH for fs-scripts という文字列を .bash_profile に追記しなさい。
-    - export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
-    - 空白スペースと改行を .bash_profile に追記しなさい。
+- 空白スペースと改行を .bash_profile に追記しなさい。
+- #PATH for fs-scripts という文字列を .bash_profile に追記しなさい。
+- export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
+- 空白スペースと改行を .bash_profile に追記しなさい。
 
 1. ターミナルを再起動
 ターミナルを一度閉じ、そのうえでターミナルを再度起動します。
