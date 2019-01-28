@@ -28,12 +28,6 @@
 - 会場に到着したら、まず受付をお願いします。
 
 
-## 勉強会までの予定
-
-- 2018.12.10: 2ヶ月前までにLin4Neuro/Macの環境を構築できるように資料を準備します。
-- 2019.01.10: 1ヶ月前までに勉強会のテキストやデータを配布します。
-
-
 ## チュートリアルのスケジュール(予定)
 
 | 日程        | 内容							| 
@@ -94,10 +88,10 @@
 ### (1) Lin4Neuroを使って参加する場合(推奨)
 - Lin4Neuro仮想マシンのダウンロード
 
-以下の文書を参考に、ご自分のパソコンに**Lin4Neuro**環境を作成して下さい。**なお、第5回ABiSチュートリアルまでに用いられたLin4Neuroと今回のLin4Neuroは構成が異なります。FreeSurferを含め、様々な改訂を行っているため、新規に準備していただくことをおすすめします。容量がない方は過去のものを削除してください。(過去のものと後方互換性はあります)**
+    - 以下の文書を参考に、ご自分のパソコンに**Lin4Neuro**環境を作成して下さい。**なお、第5回ABiSチュートリアルまでに用いられたLin4Neuroと今回のLin4Neuroは構成が異なります。FreeSurferを含め、様々な改訂を行っているため、新規に準備していただくことをおすすめします。容量がない方は過去のものを削除してください。(過去のものと後方互換性はあります)**
 
-	- Macユーザー：[VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/docs/pdf/L4N_on_Mac_Install.pdf)
-	- Windowsユーザー：[VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/docs/pdf/L4N_on_Win_Install.pdf)
+        - Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/docs/pdf/L4N_on_Mac_Install.pdf)
+        - Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/docs/pdf/L4N_on_Win_Install.pdf)
 	
 ### (2) 自前のmacOS環境で参加する場合
 
@@ -108,7 +102,7 @@
 
         - FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
 
-	- [3D Sicer](https://download.slicer.org/)
+        - [3D Slicer](https://download.slicer.org/)
  
 
 2. GitHubの設定
