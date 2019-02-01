@@ -9,7 +9,7 @@
 ## 会場案内
 
 - [自然科学研究機構生理学研究所1F大会議室](http://www.nips.ac.jp/)
-- [会場までの経路](http://www.nips.ac.jp/profile/access.html)**必ずご参照ください。明大寺地区になります**
+- [会場までの経路](http://www.nips.ac.jp/profile/access.html) ** <- 必ずご参照ください。明大寺地区になります **
 
 
 ## チュートリアル当日のお願い
@@ -19,7 +19,7 @@
     - 3/2 8:00-10:00, 12:00-14:00, 17:00-18:00 
     - 3/3 8:00-10:00, 12:00-14:00, 15:00-17:00
 
-- 当日、生理研のキャンパス内には、**売店を含め食事をする施設がございません。** 昼休みはの時間は短いため、各自、コンビニなどで、当日の昼食を準備してご持参ください。コンビニの場所などは、[こちらの地図](https://github.com/kytk/abis-web/raw/master/pdf/higashiokazaki-map.pdf)を参照してください。
+- 当日、生理研のキャンパス内には、**売店を含め食事をする施設がございません。** 昼休みはの時間は短いため、各自、コンビニなどで、当日の昼食を準備してご持参ください。コンビニの場所などは、[こちらの地図](https://github.com/kytk/abis-web/blob/master/pdf/higashiokazaki-map.pdf)を参照してください。
 
 - 生理学研究所 実験研究棟は、全館、土足禁止です。受講者は各自上履き（スリッパなど）、普段靴を入れるビニール袋をご持参ください。
 
@@ -90,8 +90,8 @@
 
     - 以下の文書を参考に、ご自分のパソコンに **Lin4Neuro** 環境を作成して下さい。 **なお、第5回ABiSチュートリアルまでに用いられたLin4Neuroと今回のLin4Neuroは構成が異なります。FreeSurferを含め、様々な改訂を行っているため、新規に準備していただくことをおすすめします。容量がない方は過去のものを削除してください。(過去のものと後方互換性はあります)**
 
-        - Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N_on_Mac_Install.pdf)
-        - Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N_on_Win_Install.pdf)
+        - Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/blob/master/pdf/L4N_on_Mac_Install.pdf)
+        - Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/blob/master/pdf/L4N_on_Win_Install.pdf)
 	
 ### (2) 自前のmacOS環境で参加する場合
 
