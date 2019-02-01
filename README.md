@@ -9,7 +9,7 @@
 ## 会場案内
 
 - [自然科学研究機構生理学研究所1F大会議室](http://www.nips.ac.jp/)
-- [会場までの経路](http://www.nips.ac.jp/profile/access.html) ** <- 必ずご参照ください。明大寺地区になります **
+- [会場までの経路](http://www.nips.ac.jp/profile/access.html) **必ずご参照ください。明大寺地区になります**
 
 
 ## チュートリアル当日のお願い
