@@ -182,7 +182,7 @@
 プロキシサーバー経由だと git pull がうまくいかない場合があります。
 そのような場合は、下記PDFを参考に当日使用するサンプルデータとテキストを入手してください。
 
-- [ABiSチュートリアルデータダウンロード方法](./pdf/ABiS_Data_GitHub.pdf)
+- [ABiSチュートリアルデータダウンロード方法](https://github.com/kytk/abis-web/raw/master/pdf/ABiS_Data_GitHub.pdf)
 	
 ## 問い合わせ
 
