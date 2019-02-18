@@ -138,7 +138,8 @@
         - Version 6.0.0 available. Would you like to install update? [yes]: に対してもそのままEnterを押します。
         - Where would you like the FSL install to be? もデフォルトのままEnterでOKです。
         - そうすると、ダウンロードがはじまります。30分〜1時間ぐらいかかりますので、辛抱強くおまちください。
-        - その後、アップデートされますが、途中でパスワードを尋ねられます。 lin4neuro とタイプしてください。パスワードは表示されませんので、注意してタイプしてください。
+        - ダウンロードが完了すると、FSL esists in the current location, would you like to keep a backup of the old version ? [no] と聞かれます。古いバージョンをとっておく必要はないので、そのままEnterを押してください。
+        - すると、パスワードを尋ねられます。 lin4neuro とタイプしてください。パスワードは表示されませんので、注意してタイプしてください。
         - うまく行くと、そのままターミナルが閉じます。
         - その後、Lin4Neuroを再起動してください。
         - ターミナルを起動し、 fsl とタイプして、FSL 6.0.0 が起動することを確認してください。
