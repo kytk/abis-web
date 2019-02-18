@@ -93,6 +93,55 @@
         - Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Mac_Install.pdf)
         - Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Win_Install.pdf)
 	
+- Slicerのアップデート(2019-02-18 追記)
+
+配布したLin4Neuroに収載されている3D Slicerは Ver.4.10.0 なのですが、このバージョンはFreeSurferのファイルを読み込めないというバグがあることが明らかになりました。よりあたらしい 4.10.1 ではこのバグが修正されています。このパッチを準備しましたので、以下の作業を行ってください。なお、3D SlicerはWindows版、Mac版もありますので、Lin4Neuroではなく、ご自身でWindows版、Mac版をインストールしていただいてもかまいません。
+
+    - Lin4Neuroのアップデート
+
+        - ターミナルを起動し、以下をタイプします。
+
+        ```
+        cd git/lin4neuro-bionic
+        git pull
+        ```
+
+    - Slicerのアップデート
+
+        - デスクトップにある "installer" をダブルクリックし、"3D Slicerのインストールをダブルクリックします。そうすると、ターミナルが起動し、3D Slicer 4.10.1 の圧縮ファイルがダウンロードされます。その後、展開する際にパスワードを尋ねられます。パスワードは、 lin4neuro です。タイプしても表示されませんので、慎重にタイプしてEnterを押してください。
+
+    - 3D Slicerの起動とバージョン確認
+
+        - メニューの「脳画像解析」から 3D Slicerを起動します。タイトルバーを見て、バージョンが **4.10.1** になっていることを確認してください。
+
+- FSLのアップデート（任意； 2019-02-18 追記）
+
+配布したFSLに搭載されているバージョンは5.0.11であり、インストールが不完全であることが判明しました。今回のFreeSurferチュートリアルではFSLは使用しませんが、以下の方法で最新の6.0.0にすることができます。
+
+    - Lin4Neuroのアップデート
+
+        - ターミナルを起動し、以下をタイプします。
+
+        ```
+        cd git/lin4neuro-bionic
+        git pull
+        ```
+
+    - FSLのアップデート
+
+        - デスクトップにある "installer" をダブルクリックし、"FSLのインストール" をダブルクリックします。
+        - そうすると、"Do you want to check the update?" と聞かれますので、 yes とタイプしてください。
+        - FSL Installer が自動でアップデートされます。
+        - Where is the FSL folder ? [/usr/local/fsl]: に対し、そのままEnterを押します。
+        - Version 6.0.0 available. Would you like to install update? [yes]: に対してもそのままEnterを押します。
+        - Where would you like the FSL install to be? もデフォルトのままEnterでOKです。
+        - そうすると、ダウンロードがはじまります。30分〜1時間ぐらいかかりますので、辛抱強くおまちください。
+        - その後、アップデートされますが、途中でパスワードを尋ねられます。 lin4neuro とタイプしてください。パスワードは表示されませんので、注意してタイプしてください。
+        - うまく行くと、そのままターミナルが閉じます。
+        - その後、Lin4Neuroを再起動してください。
+        - ターミナルを起動し、 fsl とタイプして、FSL 6.0.0 が起動することを確認してください。
+
+
 ### (2) 自前のmacOS環境で参加する場合
 
 1. ソフトウェアのインストール
