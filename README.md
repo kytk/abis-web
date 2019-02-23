@@ -78,44 +78,42 @@
 今回、以下のパターンを想定しています。
         
 - Mac, Winを問わず、VirtualBoxおよびLin4Neuroを準備してチュートリアルに参加する場合
-
-    - チュートリアルは、Lin4Neuro上でターミナルを動かしていきます。
-    - 講師と同じ環境を再現したい場合は、Lin4Neuro上で作業することを推奨します。
-    - このメリットは、研究室に戻った際に、研究室のワークステーションなどでも同様の環境を簡単に構築できることです。
-    - FreeSurfer、DeepLearningの解析ツールが事前にすべて準備されています。
+	- チュートリアルは、Lin4Neuro上でターミナルを動かしていきます。
+	- 講師と同じ環境を再現したい場合は、Lin4Neuro上で作業することを推奨します。
+	- このメリットは、研究室に戻った際に、研究室のワークステーションなどでも同様の環境を簡単に構築できることです。
+	- FreeSurfer、DeepLearningの解析ツールが事前にすべて準備されています。
 
 - 自前のMac解析環境またはLinux解析環境でチュートリアルに参加する場合
-
-    - FreeSurfer, git, DeepLearningのためのPythonの各種ライブラリを自前でセットアップ可能なら、自前のMacまたはLinuxで参加いただけます。その場合、事前サポートは限られることをご了承ください。セットアップに自信がない場合は、VirtualBox + Lin4Neuro で参加することをお勧めします。
+	- FreeSurfer, git, DeepLearningのためのPythonの各種ライブラリを自前でセットアップ可能なら、自前のMacまたはLinuxで参加いただけます。その場合、事前サポートは限られることをご了承ください。セットアップに自信がない場合は、VirtualBox + Lin4Neuro で参加することをお勧めします。
 
 ### (1) Lin4Neuroを使って参加する場合(推奨)
 - Lin4Neuro仮想マシンのダウンロード
 
-    - 以下の文書を参考に、ご自分のパソコンに **Lin4Neuro** 環境を作成して下さい。 **なお、第5回ABiSチュートリアルまでに用いられたLin4Neuroと今回のLin4Neuroは構成が異なります。FreeSurferを含め、様々な改訂を行っているため、新規に準備していただくことをおすすめします。容量がない方は過去のものを削除してください。(過去のものと後方互換性はあります)**
+	- 以下の文書を参考に、ご自分のパソコンに **Lin4Neuro** 環境を作成して下さい。 **なお、第5回ABiSチュートリアルまでに用いられたLin4Neuroと今回のLin4Neuroは構成が異なります。FreeSurferを含め、様々な改訂を行っているため、新規に準備していただくことをおすすめします。容量がない方は過去のものを削除してください。(過去のものと後方互換性はあります)**
 
-        - Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Mac_Install.pdf)
-        - Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Win_Install.pdf)
+		- Macユーザー [VirtualboxへのLin4Neuroのインストール-Mac編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Mac_Install.pdf)
+		- Windowsユーザー [VirtualboxへのLin4Neuroのインストール-Windows編-](https://github.com/kytk/abis-web/raw/master/pdf/L4N-abis_on_Win_Install.pdf)
 	
 - Slicerのアップデート(2019-02-18 追記)
 	- 配布したLin4Neuroに収載されている3D Slicerは Ver.4.10.0 なのですが、このバージョンはFreeSurferのファイルを読み込めないというバグがあることが明らかになりました。よりあたらしい 4.10.1 ではこのバグが修正されています。このパッチを準備しましたので、以下の作業を行ってください。なお、3D SlicerはWindows版、Mac版もありますので、Lin4Neuroではなく、ご自身でWindows版、Mac版をインストールしていただいてもかまいません。
 
-	1. Lin4Neuroのアップデート
+1. Lin4Neuroのアップデート
 	- ターミナルを起動し、以下をタイプします。
 	```
 	cd git/lin4neuro-bionic
 	git pull
 	```
 
-	2. Slicerのアップデート
+2. Slicerのアップデート
 	- デスクトップにある "installer" をダブルクリックし、"3D Slicerのインストールをダブルクリックします。そうすると、ターミナルが起動し、3D Slicer 4.10.1 の圧縮ファイルがダウンロードされます。その後、展開する際にパスワードを尋ねられます。パスワードは、 lin4neuro です。タイプしても表示されませんので、慎重にタイプしてEnterを押してください。
 
-	3. 3D Slicerの起動とバージョン確認
+3. 3D Slicerの起動とバージョン確認
 	- メニューの「脳画像解析」から 3D Slicerを起動します。タイトルバーを見て、バージョンが **4.10.1** になっていることを確認してください。
 
 - FSLのアップデート（任意； 2019-02-18 追記）
 	- 配布したFSLに搭載されているバージョンは5.0.11であり、インストールが不完全であることが判明しました。今回のFreeSurferチュートリアルではFSLは使用しませんが、以下の方法で最新の6.0.0にすることができます。
 
-	1. Lin4Neuroのアップデート
+1. Lin4Neuroのアップデート
 	- ターミナルを起動し、以下をタイプします。
 
         ```
@@ -123,9 +121,9 @@
         git pull
         ```
 
-	2. FSLのアップデート
+2. FSLのアップデート
 	- デスクトップにある "installer" をダブルクリックし、"FSLのインストール" をダブルクリックします。
-        - そうすると、"Do you want to check the update?" と聞かれますので、 yes とタイプしてください。
+		- そうすると、"Do you want to check the update?" と聞かれますので、 yes とタイプしてください。
         - FSL Installer が自動でアップデートされます。
         - Where is the FSL folder ? [/usr/local/fsl]: に対し、そのままEnterを押します。
         - Version 6.0.0 available. Would you like to install update? [yes]: に対してもそのままEnterを押します。
@@ -150,18 +148,17 @@
 2. GitHubの設定
 
     - チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
-
     - gitディレクトリを準備
-	- ホームディレクトリの下にgitディレクトリを準備します。
-	- ターミナルを立ち上げ、以下をタイプしてください。
+		- ホームディレクトリの下にgitディレクトリを準備します。
+		- ターミナルを立ち上げ、以下をタイプしてください。
 
             ```
             cd
             mkdir git
             ```
 
-   - チュートリアル用スクリプトのリポジトリをダウンロード
-   	- 以下をそのままコピー＆ペーストしてください。
+	- チュートリアル用スクリプトのリポジトリをダウンロード
+   		- 以下をそのままコピー＆ペーストしてください。
 
             ```
             cd ~/git
