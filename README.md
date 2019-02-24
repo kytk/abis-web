@@ -177,15 +177,21 @@
 	この結果、"Python 3.7.2" のように表示されればOKです。
 
     - Python3のモジュール確認
+
         - Python3で実際にモジュールをインポートしてみてエラーがでないか確認します（特に何も表示がでなければ無事にインポートできているということになります）例外はkerasで、これはうまくインポートされれば、"Using Tensorflow backend."と表示されます。
 
 
-        ```
+	```
 	python3
+
 	import numpy as np
+
 	import matplotlib
+
 	import tensorflow
+
 	import keras
+
 	Using Tensorflow backend.
 	```
 
