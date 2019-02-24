@@ -179,14 +179,14 @@
     - Python3のモジュール確認
         - Python3で実際にモジュールをインポートしてみてエラーがでないか確認します（特に何も表示がでなければ無事にインポートできているということになります）例外はkerasで、これはうまくインポートされれば、"Using Tensorflow backend."と表示されます。
 
+
         ```
 	python3
-	>>> import numpy as np
-	>>> import matplotlib
-	>>> import tensorflow
-	>>> import keras
+	import numpy as np
+	import matplotlib
+	import tensorflow
+	import keras
 	Using Tensorflow backend.
-	>>>
 	```
 
 	- 終了するには、`exit()`とタイプします。
@@ -195,7 +195,7 @@
 
 
 
-2. GitHubの設定
+3. GitHubの設定
 
     - チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
     - gitディレクトリを準備
@@ -217,7 +217,7 @@
 
 	- UsernameとPasswordを聞かれます。受講者メールに記載されているUsernameとPasswordを記載してください。 そうするとダウンロードが始まります。ダウンロードは約5GBありますのでしばらくかかります。
 
-3. パスの設定
+4. パスの設定
 
     - 過去のFreeSurferチュートリアルに参加された方々
 
@@ -248,11 +248,11 @@
             - export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
             - 空白スペースと改行を .bash_profile に追記しなさい。
 
-4. ターミナルを再起動
+5. ターミナルを再起動
 
     - ターミナルを一度閉じ、そのうえでターミナルを再度起動します。
 
-5. プログラムの起動確認
+6. プログラムの起動確認
 
     - ターミナルから以下をタイプしてください。
 
@@ -263,6 +263,7 @@
     - 以下のような画像が得られれば設定が無事に完了しています。
 
 ![FreeSurfer_check](./img/fs_check.png)
+
 
 ### (3) subjectsデータの入手
 
