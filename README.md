@@ -182,15 +182,15 @@
 
 
 	```
-	python3
+	$ python3
 
-	import numpy as np
+	>>> import numpy as np
 
-	import matplotlib
+	>>> import matplotlib
 
-	import tensorflow
+	>>> import tensorflow
 
-	import keras
+	>>> import keras
 
 	Using Tensorflow backend.
 	```
