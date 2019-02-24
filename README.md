@@ -143,7 +143,56 @@
     - ご自身でMacを操作する方は、下記を参考に、FreeSurfer, 3D Slicer と DeepLearningに必要な以下のPythonツールを各自セットアップしてきてください。
 	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
 	- [3D Slicer](https://download.slicer.org/)
+
+	- Python3 および必要なモジュール
+		- これはこの下で説明しますので、それに従ってください。	
  
+2. Python3 および必要なモジュールの入手
+
+    - Homebrew のセットアップ
+        - Python3 は Homebrew経由で入手します。Homebrewを使ったことのない方は、以下をターミナルにコピー＆ペーストしてください。
+	```
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	```
+
+    - Python3 のインストール
+        - 以下をターミナルにタイプすることで、 Python3 をインストールします
+	```
+	brew install python3 
+	```
+
+    - 必要なモジュールのインストール
+        - pip3 というコマンドを使うことで、必要なモジュールを入手できます。以下をコピー＆ペーストしてください。
+	```
+	pip3 install cmake numpy scipy matplotlib pyyaml h5py pydot-ng opencv-python keras python-dateutil jupyter pillow
+	pip3 install --upgrade tensorflow
+	```
+    - python3 の起動確認
+        - ターミナルから以下のようにタイプしてください。
+	```
+	python3 --version
+	```
+
+	この結果、"Python 3.7.2" のように表示されればOKです。
+
+    - Python3のモジュール確認
+        - Python3で実際にモジュールをインポートしてみてエラーがでないか確認します（特に何も表示がでなければ無事にインポートできているということになります）例外はkerasで、これはうまくインポートされれば、"Using Tensorflow backend."と表示されます。
+
+        ```
+	python3
+	>>> import numpy as np
+	>>> import matplotlib
+	>>> import tensorflow
+	>>> import keras
+	Using Tensorflow backend.
+	>>>
+	```
+
+	- 終了するには、`exit()`とタイプします。
+
+    - チュートリアル前までに必ずここまで作業してください。チュートリアル当日には、Python3のインストールのサポートはできません。ご了承ください。わからない場合には早めに問い合わせフォームからお問い合わせください。
+
+
 
 2. GitHubの設定
 
