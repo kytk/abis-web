@@ -183,9 +183,9 @@
 
 
 	```
-	$ python3
+	$ python3     # $はタイプ不要です
 
-	>>> import numpy as np
+	>>> import numpy as np    # >>> はタイプ不要です。以下同じ。
 
 	>>> import matplotlib
 
