@@ -65,7 +65,7 @@
 	- 2ボタン以上のUSBマウス（必須ではありませんが、持っていると便利です）
     
 
-## 事前準備
+## ソフトウェアの準備
 
 ### (1) Lin4Neuroで参加する場合
 
@@ -79,114 +79,118 @@
 	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
 	- [3D Slicer](https://download.slicer.org/)
 
-<!--
-2. GitHubの設定
+- データディレクトリのセットアップ
 
-    - チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
-    - gitディレクトリを準備
-		- ホームディレクトリの下にgitディレクトリを準備します。
-		- ターミナルを立ち上げ、以下をタイプしてください。
+    - ターミナルから以下を実行してください。これは、チュートリアルの全受講者でデータディレクトリのパスを共通化するためのものです。
 
-            ```
-            cd
-            mkdir git
-            ```
-
-	- チュートリアル用スクリプトのリポジトリをダウンロード
-   		- 以下をそのままコピー＆ペーストしてください。
-
-            ```
-            cd ~/git
-            git clone https://github.com/kytk/fs-scripts.git
-            ```
-
-	- UsernameとPasswordを聞かれます。受講者メールに記載されているUsernameとPasswordを記載してください。 そうするとダウンロードが始まります。ダウンロードは約5GBありますのでしばらくかかります。
-
-3. パスの設定
-
-    - 過去のFreeSurferチュートリアルに参加された方々
-
-	- 以下のコマンドにより、.bash_profileを開きます。
-
-            ```
-            cd
-            open -e ~/.bash_profile
-            ```
-
-	- "export PATH=$PATH:~/git/abis/fs-scripts" といった文字列がある行を削除し、保存してテキストエディットを閉じてください。
+    ```
+    mkdir ~/share
+    sudo sh -c "umask 022 ; mkdir /media ; ln -s ~/share /media/sf_share"
+    ```
 
 
-    - 今回のチュートリアル用のパス設定	
-	- ターミナルから以下をそのままコピー＆ペーストしてください。タイプする際は、シングルクォーテーションであることに注意してください。ダブルクォーテーションではありません。
+## FreeSurfer用スクリプトの準備
 
-            ```
-            echo ' ' >> ~/.bash_profile
-            echo '#PATH for fs-scripts' >> ~/.bash_profile
-            echo 'export PATH=$PATH:~/git/fs-scripts' >> ~/.bash_profile
-            echo ' ' >> ~/.bash_profile
-            ```
+- 勉強会(およびチュートリアル)で用いるスクリプトを以下に従って準備してください。
 
-	- ちなみに上記のコードは以下の意味です。
+- Lin4NeuroもしくはmacOSでターミナルを起動します。
 
-            - 空白スペースと改行を .bash_profile に追記しなさい。
-            - #PATH for fs-scripts という文字列を .bash_profile に追記しなさい。
-            - export PATH=$PATH:~/git/abis-201903/1-3_freesurfer/fs-scripts という文字列を .bash_profile に追記しなさい。 
-            - 空白スペースと改行を .bash_profile に追記しなさい。
+- `cd git`をタイプします。Lin4Neuroは確実にありますが、MacOSの方でエラーになる場合は、`mkdir git`として git ディレクトリを作成し、再度 `cd git` としてください。
 
-5. ターミナルを再起動
-
-    - ターミナルを一度閉じ、そのうえでターミナルを再度起動します。
-
-6. プログラムの起動確認
-
-    - ターミナルから以下をタイプしてください。
+- 以下をタイプ(もしくはコピー＆ペースト)します。
 
         ```
-        fs_check_6.0.sh
+        git clone https://github.com/kytk/fs-scripts.git
         ```
 
-    - 以下のような画像が得られれば設定が無事に完了しています。
+- これで、ホームディレクトリの下の git ディレクトリに、 fs-scripts というディレ
+クトリが作成されます。
 
-![FreeSurfer_check](./img/fs_check.png)
+- 次に、このディレクトリをパスに通します。以下をタイプします。(1回だけで大丈夫です)
 
 
+        ```
+        cd fs-scripts
+        ./addpath.sh
+        ```
 
-### (3) subjectsデータの入手
+- そうすると次のような表示が出ます。
 
-- 2月19日以前に abis-201903 フォルダの入手をされた方は、一度削除してください。
-    - Windowsの方は、"share" -> "abis-201903" フォルダになります。
-    - macOS の方は、 "git" -> "abis-201903" フォルダになります。
+        ```
+        Which OS are you using? Select number.
+        1) Linux
+        2) MacOS
+        3) quit
+        ```
 
-- 上記 (1), (2) に従って、再度、abis-201903 のダウンロードを行ってください。データが多くないため、時間はさほどかかりません。
+- Lin4Neuroの方は 1 を、macOSの方は 2 をタイプしてください。そうすると、以下が表示されます。
 
-- その後、abis-201903 フォルダに移動し、スクリプトを実行します。
 
-    - Lin4Neuro の方は、ターミナルを起動し、以下をタイプしてください。
-      ```
-      cd /media/sf_share/abis-201903/1-3_freesurfer
-      ./get_subjects.sh
-      ```
+        ```
+        PATH for fs-scripts was added to ~/.bashrc (Macの場合は~/.bash_profile)
+        Please close the terminal, re-open and run checkpath.sh.
+        ```
 
-    - macOSネイティブで FreeSurferチュートリアルを受けれる方は、ターミナルを起動し、以下をタイプしてください。
-      ```
-      cd ~/git/abis-201903/1-3_freesurfer
-      ./get_subjects.sh
-      ```
+- ターミナルを一度閉じてください。そして、新たにターミナルを起動し、以下をタイプしてください。
 
-- こちらで、チュートリアルに使用する subjects がダウンロードされます。
-- チュートリアル前に必ずこの作業を実行してください。
+        ```
+        checkpath.sh
+        ```
 
-### プロキシサーバーなどで git clone / pull がうまくいかない場合
-プロキシサーバー経由だと git clone / pull がうまくいかない場合があります。
-そのような場合は、下記PDFを参考に当日使用するサンプルデータとテキストを入手してください。
+- これで、以下が表示されれば無事にパスに追加されました。
 
-- [ABiSチュートリアルデータダウンロード方法](https://github.com/kytk/abis-web/raw/master/pdf/ABiS_Data_GitHub.pdf)
+        ```
+        Success! fs-scripts is added to path.
+        ```
 
--->
+- アップデートの案内があった場合には、以下をタイプしてください。
+
+        ```
+        cd ~/git/fs-scripts
+        git pull
+        ```
+
+## チュートリアル用データ・資料の入手
+
+- 本チュートリアルで使用するサンプルデータや資料は、GitLabというデータ共有サービスを通して配布します。利用に必要なアカウント名やパスワードは受講者宛のメールで別途お伝えします。ここで配布されるものは、チュートリアル当日まで更新される可能性がありますので、こまめに（特に参加直前に）アップデートするようにして下さい。
+
+1. 初めてセットアップする時: ターミナル（Lin4Neuro では、左下のスタートアイコンの隣にあるアイコンから起動できます。macOS では、アプリケーション ＞ ユーティリティの中にあります）から以下を実行して下さい
+
+    ```
+    cd /media/sf_share
+    git clone https://gitlab.com/kytk/abis-202003.git
+     （今回は、github ではなく、gitlab を使用しますのでご注意下さい）
+
+    ```
+
+2. ディレクトリを更新する時: ターミナルから以下を実行してください
+    ```
+    cd /media/sf_share/abis-202003
+    git pull
+    ```
 	
+### プロキシサーバーなどを使っている場合
+
+- PCがプロキシサーバを経由して外部ネットワークに接続されている場合は、先にターミナルから以下のコマンドを入力し、Gitに対するプロキシ設定を行って下さい
+
+    ```
+    git config --global http.proxy  http://プロキシ名:ポート番号
+    git config --global https.proxy http://プロキシ名:ポート番号
+    ```
+
+- プロキシ名やポート番号は、所属機関･部署のネットワーク管理者にお尋ね下さい。
+
+- プロキシ設定が不要になった時は、以下のコマンドによって解除できます：
+
+    ```
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy
+    ```
+
+
 ## 問い合わせ
 
-準備がうまくいかない時のために、問い合わせフォームを準備しています。こちらからご質問ください。数日以内に担当者から返信させていただきます。
+- 準備がうまくいかない時のために、問い合わせフォームを準備しています。こちらからご質問ください。数日以内に担当者から返信させていただきます。
 
 [問い合わせフォーム](https://forms.gle/vMRau1iUaCkvgDQf6)
 
