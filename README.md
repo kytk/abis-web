@@ -85,10 +85,10 @@
 
     - ターミナルから以下を実行してください。これは、チュートリアルの全受講者でデータディレクトリのパスを共通化するためのものです。
 
-    ```
-    mkdir ~/share
-    sudo sh -c "umask 022 ; mkdir /media ; ln -s ~/share /media/sf_share"
-    ```
+	```
+	mkdir ~/share
+	sudo sh -c "umask 022 ; mkdir /media ; ln -s ~/share /media/sf_share"
+	```
 
 
 ## FreeSurfer用スクリプトの準備
@@ -101,56 +101,54 @@
 
 - 以下をタイプ(もしくはコピー＆ペースト)します。
 
-        ```
-        git clone https://github.com/kytk/fs-scripts.git
-        ```
+    ```
+    git clone https://github.com/kytk/fs-scripts.git
+    ```
 
 - これで、ホームディレクトリの下の git ディレクトリに、 fs-scripts というディレ
 クトリが作成されます。
 
 - 次に、このディレクトリをパスに通します。以下をタイプします。(1回だけで大丈夫です)
 
-
-        ```
-        cd fs-scripts
-        ./addpath.sh
-        ```
+    ```
+    cd fs-scripts
+    ./addpath.sh
+    ```
 
 - そうすると次のような表示が出ます。
 
-        ```
-        Which OS are you using? Select number.
-        1) Linux
-        2) MacOS
-        3) quit
-        ```
+    ```
+    Which OS are you using? Select number.
+    1) Linux
+    2) MacOS
+    3) quit
+    ```
 
 - Lin4Neuroの方は 1 を、macOSの方は 2 をタイプしてください。そうすると、以下が表示されます。
 
-
-        ```
-        PATH for fs-scripts was added to ~/.bashrc (Macの場合は~/.bash_profile)
-        Please close the terminal, re-open and run checkpath.sh.
-        ```
+    ```
+    PATH for fs-scripts was added to ~/.bashrc (Macの場合は~/.bash_profile)
+    Please close the terminal, re-open and run checkpath.sh.
+    ```
 
 - ターミナルを一度閉じてください。そして、新たにターミナルを起動し、以下をタイプしてください。
 
-        ```
-        checkpath.sh
-        ```
+    ```
+    checkpath.sh
+    ```
 
 - これで、以下が表示されれば無事にパスに追加されました。
 
-        ```
-        Success! fs-scripts is added to path.
-        ```
+    ```
+    Success! fs-scripts is added to path.
+    ```
 
 - アップデートの案内があった場合には、以下をタイプしてください。
 
-        ```
-        cd ~/git/fs-scripts
-        git pull
-        ```
+    ```
+    cd ~/git/fs-scripts
+    git pull
+    ```
 
 ## チュートリアル用データ・資料の入手
 
