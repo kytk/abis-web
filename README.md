@@ -71,18 +71,15 @@
 
 - [こちら](./setup_l4n.md){:target="_blank"} をご覧いただき、準備してください。
 
-### (2) 自前のmacOS環境で参加する場合
+### (2) 自前のmacOS/Linux環境で参加する場合
 
-- T.B.A.
+- ソフトウェアのインストール
 
-<!--
-
-1. ソフトウェアのインストール
-
-    - ご自身でMacを操作する方は、下記を参考に、FreeSurfer, 3D Slicer を各自セットアップしてきてください。
+    - ご自身でMac/Linuxを操作する方は、下記を参考に、FreeSurfer, 3D Slicer を各自セットアップしてきてください。
 	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
 	- [3D Slicer](https://download.slicer.org/)
 
+<!--
 2. GitHubの設定
 
     - チュートリアルで使うスクリプトなどはGitHub経由で配布します。このため、gitの設定が必要になります。(macOS上でLin4Neuroを動作させる方は、以下の作業は不要です。)
@@ -184,12 +181,13 @@
 そのような場合は、下記PDFを参考に当日使用するサンプルデータとテキストを入手してください。
 
 - [ABiSチュートリアルデータダウンロード方法](https://github.com/kytk/abis-web/raw/master/pdf/ABiS_Data_GitHub.pdf)
+
+-->
 	
 ## 問い合わせ
 
 準備がうまくいかない時のために、問い合わせフォームを準備しています。こちらからご質問ください。数日以内に担当者から返信させていただきます。
 
-[問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSc-JX20lvmM3LzSbTKIywtepqwBB-06kVN6AvEFzs-1kcjhHA/viewform?usp=sf_link)
+[問い合わせフォーム](https://forms.gle/vMRau1iUaCkvgDQf6)
 
 
--->
