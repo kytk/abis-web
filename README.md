@@ -11,8 +11,8 @@
 
 ## 会場案内
 
-- [自然科学研究機構生理学研究所1F大会議室](http://www.nips.ac.jp/)
-- [会場までの経路](http://www.nips.ac.jp/profile/access.html) **必ずご参照ください。明大寺地区になります**
+- [自然科学研究機構生理学研究所1F大会議室](http://www.nips.ac.jp/){:target="_blank"} 
+- [会場までの経路](http://www.nips.ac.jp/profile/access.html){:target="_blank"} **必ずご参照ください。明大寺地区になります**
 
 
 ## チュートリアル当日のお願い
@@ -22,7 +22,7 @@
     - 02/29 8:00-10:00, 12:00-14:00, 17:00-18:00 
     - 03/01 8:00-10:00, 12:00-14:00, 15:00-17:00
 
-- 当日、生理研のキャンパス内には、**売店を含め食事をする施設がございません。** 昼休みはの時間は短いため、各自、コンビニなどで、当日の昼食を準備してご持参ください。コンビニの場所などは、[こちらの地図](https://github.com/kytk/abis-web/blob/master/pdf/higashiokazaki-map.pdf)を参照してください。
+- 当日、生理研のキャンパス内には、**売店を含め食事をする施設がございません。** 昼休みはの時間は短いため、各自、コンビニなどで、当日の昼食を準備してご持参ください。コンビニの場所などは、[こちらの地図](https://github.com/kytk/abis-web/blob/master/pdf/higashiokazaki-map.pdf){:target="_blank"} を参照してください。
 
 - 生理学研究所 実験研究棟は、全館、土足禁止です。受講者は各自上履き（スリッパなど）、普段靴を入れるビニール袋をご持参ください。
 
@@ -86,9 +86,9 @@
 - ソフトウェアのインストール
 
     - ご自身でMac/Linuxを操作する方は、下記を参考に、FreeSurfer, 3D Slicer, FSL を各自セットアップしてきてください。
-	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948)
-	- [3D Slicer](https://download.slicer.org/)
-	- FSL: [FSLのmacOSへのインストール方法](https://www.nemotos.net/?p=243)
+	- FreeSurfer: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948){:target="_blank"}  
+	- [3D Slicer](https://download.slicer.org/){:target="_blank"} 
+	- FSL: [FSLのmacOSへのインストール方法](https://www.nemotos.net/?p=243){:target="_blank"} 
 
 - データディレクトリのセットアップ
 
@@ -108,10 +108,23 @@
 
 - `cd git`をタイプします。Lin4Neuroは確実にありますが、MacOSの方でエラーになる場合は、`mkdir git`として git ディレクトリを作成し、再度 `cd git` としてください。
 
+- 以下をタイプしてください。
+
+    ```
+    ls
+    ```
+
+- この際、`fs-scripts` があるようでしたら、以下をタイプして、一度削除してください。リニューアルしたため、この作業をお願いします。
+
+    ```
+    rm -rf fs-scripts
+    ```
+
 - 以下をタイプ(もしくはコピー＆ペースト)します。
 
     ```
-    git clone https://github.com/kytk/fs-scripts.git
+    git clone https://gitlab.com/kytk/fs-scripts.git
+    注意: githubでなく、gitlabであることに注意してください。
     ```
 
 - これで、ホームディレクトリの下の git ディレクトリに、 **fs-scripts** というディレクトリが作成されます。
