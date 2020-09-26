@@ -18,9 +18,6 @@
 Lin4Neuroの仮想アプライアンスを以下からダウンロードします。20GBありますので、十分に容量があるところにダウンロードしてください。
 
 (現在準備中です)
-<!--
-- [L4N-1804-abis-20191218.ovaのダウンロード](http://www.md.tsukuba.ac.jp/clinical-med/psy-neuroimaging/ova/L4N-1804-abis-20191218.ova)
--->
 
 ## 3. Lin4Neuro仮想アプライアンスのインポート
 
