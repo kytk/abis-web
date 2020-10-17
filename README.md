@@ -257,7 +257,7 @@ FreeSurferのツールはアイコンが準備されていません。以下で�
 
     ```
     cd /media/sf_share
-    git clone https://oauth2:putHgwgdhemxF1Mt7vVQ@gitlab.com/kytk/abis-202012.git
+    メールで示されているコマンドをここにタイプします。(セキュリティの都合でここには記しません)
     ```
 
 2. 更新する時: ターミナルから以下を実行してください
