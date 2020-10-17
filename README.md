@@ -92,7 +92,7 @@
  
     - macOS
         - **【要検証】未検証ですので、これから検証します。**
-        - [macOS用ダウンローダー](https://github.com/kytk/abis-web/blob/master/util/l4n_mac.zip)をダウンロードします。
+        - [macOS用ダウンローダー](https://github.com/kytk/abis-web/raw/master/util/l4n_mac.zip)をダウンロードします。
         - l4n_mac.zip を展開します。
         - l4n_mac フォルダの中にある `get_L4N.command` をダブルクリックします。
         - ダウンロードが完了すると、L4N-1804-abis-20200927 フォルダの中に L4N-1804-abis-20200927.ova というファイルが生成されます。
