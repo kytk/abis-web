@@ -68,7 +68,7 @@
 - ソフトウェアのインストール
 
     - ご自身でMac/Linuxを操作する方は、下記を参考に、FreeSurfer, 3D Slicer, FSL を各自セットアップしてきてください。
-	- FreeSurfer7.1.1: [macOSへのFreeSurfer6.0のインストール](http://www.nemotos.net/?p=1948){:target="_blank"}(リンク先は6.0ですが、7.1も同様にインストールできます)  
+	- FreeSurfer7.1.1: [macOS への FreeSurfer 7.1.1 のコマンドラインを使ったインストール（スクリプト付き）](http://www.nemotos.net/?p=3632){:target="_blank"}
 	- [3D Slicer](https://download.slicer.org/){:target="_blank"} 
 	- FSL: [FSLのmacOSへのインストール方法](https://www.nemotos.net/?p=243){:target="_blank"} 
 	- mrtrix
