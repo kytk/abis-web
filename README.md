@@ -103,7 +103,7 @@
 
         ![実行](img/win_get_l4n2.png)
 
-        ![aria2c](img/win_get_l4n1.png)
+        ![aria2c](img/win_get_l4n3.png)
  
     - macOS
 
