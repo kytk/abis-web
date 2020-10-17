@@ -12,7 +12,6 @@
 - 今回はWeb開催となります。
 - Zoomの開始時間は、**08：30** です。
 
-
 ## チュートリアルのスケジュール(予定)
 
 | 日程		| 内容 							| 
@@ -85,12 +84,14 @@
 - 分散ダウンロード(推奨): Lin4Neuroは26GBありますので、分散ダウンロードできるプログラムを準備してあります。自身の環境にあわせて以下の対処を行ってください。
 
     - Windows10
+        - **【要検証】未検証ですので、これから検証します。**
         - [Windows用ダウンローダー](https://github.com/kytk/abis-web/raw/master/util/l4n_win.zip)をダウンロードします。
         - l4n_win.zip を展開します。
         - l4n_win フォルダの中にある `get_L4N_win.bat` をダブルクリックします。
         - ダウンロードが完了すると、L4N-1804-abis-20200927 フォルダの中に L4N-1804-abis-20200927.ova というファイルが生成されます。
  
     - macOS
+        - **【要検証】未検証ですので、これから検証します。**
         - [macOS用ダウンローダー](https://github.com/kytk/abis-web/blob/master/util/l4n_mac.zip)をダウンロードします。
         - l4n_mac.zip を展開します。
         - l4n_mac フォルダの中にある `get_L4N.command` をダブルクリックします。
