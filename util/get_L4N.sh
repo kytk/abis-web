@@ -4,23 +4,23 @@
 
 #####
 # 準備のために使ったコマンド
-# split -n 30 -d L4N-1804-abis-20200927.ova L4N-1804-abis-split-
+# split -n 30 -d L4N-1804-abis-20201030.ova L4N-1804-abis-split-
 # for f in L4N-1804-abis-split-*; do openssl md5 $f > ${f}.md5; done
 # sftp user@ftpsite
-# cd psy-neuroimaging/L4N-1804-abis-20200927-split
+# cd psy-neuroimaging/L4N-1804-abis-20201030-split
 # put L4N-1804-abis-split-*
 #####
 
 #set -x
 
 #cd ~/Downloads
-mkdir L4N-1804-abis-20200927
-cd L4N-1804-abis-20200927
+mkdir L4N-1804-abis-20201030
+cd L4N-1804-abis-20201030
 
 # variable ################
-baseurl="http://www.md.tsukuba.ac.jp/clinical-med/psy-neuroimaging/L4N-1804-abis-20200927-split"
+baseurl="http://www.md.tsukuba.ac.jp/clinical-med/psy-neuroimaging/L4N-1804-abis-20201030-split"
 base="L4N-1804-abis-split"
-L4N="L4N-1804-abis-20200927.ova"
+L4N="L4N-1804-abis-20201030.ova"
 ###########################
 
 echo "チュートリアル用のLin4Neuroをダウンロードします"
