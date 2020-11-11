@@ -381,16 +381,14 @@ FreeSurferのツールはアイコンが準備されていません。以下で�
 
 - `yes` をタイプすると、FreeSurferの recon-all の autorecon1 が走りはじめます。
 
-- 最後にターミナルに以下が表示されます。この数字を報告してください。講習会のZoomリンクが送付されます。
+- 最後にターミナルに以下が表示されます。この数字を[こちら](https://docs.google.com/forms/d/e/1FAIpQLSddP2Et28ds7yEF1LYzznzJleGqLhqAuNbpm_FpV0D8LVWs6A/viewform?usp=sf_link){:target="_blank"} のページからご報告ください。
 
     ```
     以下の値を報告してください
     X.XX
     ```
-- 数字を報告するページは[こちら](https://docs.google.com/forms/d/e/1FAIpQLSddP2Et28ds7yEF1LYzznzJleGqLhqAuNbpm_FpV0D8LVWs6A/viewform?usp=sf_link){:target="_blank"} となります。
-
+- この数字が正しく出力された方は、準備がすべて整ったことになります。メールで、講習会のZoomリンクが送付されます。
 - ここまでたどりつけない場合は、事前サポートが必要になります。今回、Zoomのため、チュートリアル当日の個別サポートが提供できませんので、このプロセスは必須とさせていただきます。
-
 
 ### 参考. 仮想マシンの削除 (チュートリアル後、不要になった場合)
 
