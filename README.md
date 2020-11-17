@@ -158,7 +158,7 @@
 
 ### B. VirtualBox 6.1.16以降 のインストール (所要時間約10分)
 
-チュートリアルでは、VirtualBox 6.1.16以降の上で Lin4Neuro を動作させます。最新版の Lin4Neuro は、VirtualBox 6.1.16で最適化されているため、前のバージョンのVirtualBoxを使用の方は**必ず6.1.16にアップグレードしてください。**特にmacOSは、6.1.16以前では仮想マシンが立ち上がらない不具合がありますのでご注意ください
+チュートリアルでは、**<span style="color: red; ">VirtualBox 6.1.16以降</span>**の上で Lin4Neuro を動作させます。最新版の Lin4Neuro は、VirtualBox 6.1.16で最適化されているため、前のバージョンのVirtualBoxを使用の方は**必ず6.1.16にアップグレードしてください。**特にmacOSは、6.1.16以前では仮想マシンが立ち上がらない不具合がありますのでご注意ください
 
 - [VirtualBoxのサイト](https://www.virtualbox.org/wiki/Downloads){:target="_blank"} から、ご自身のOSにあったVirtualBoxのインストーラーをダウンロードします
 
