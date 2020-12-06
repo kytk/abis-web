@@ -510,7 +510,7 @@ FreeSurferのツールはアイコンが準備されていません。以下で�
 
 ## Lin4Neuro への Google chrome のインストール (所要時間5分)
 
-- Lin4NeuroにGoogle Chromeをインストールしたい方向けに、説明動画を準備しました。[こちら](https://drive.google.com/file/d/1MS_AsXdTDUL4JM5kKKsZa6LxTDmPTWu7/view?usp=sharing){:target="_blank"}からご確認ください
+- Lin4NeuroにGoogle Chromeをインストールしたい方向けに、説明動画を準備しました。[こちら](https://vimeo.com/487737208){:target="_blank"}からご確認ください
 
 
 ## 問い合わせ
