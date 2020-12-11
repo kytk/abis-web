@@ -21,6 +21,7 @@ cd L4N-1804-abis-20201030
 baseurl="http://www.md.tsukuba.ac.jp/clinical-med/psy-neuroimaging/L4N-1804-abis-20201030-split"
 base="L4N-1804-abis-split"
 L4N="L4N-1804-abis-20201030.ova"
+L4Nmd5="http://www.md.tsukuba.ac.jp/clinical-med/psy-neuroimaging/L4N/L4N-1804-abis-20201030.ova.md5"
 ###########################
 
 echo "チュートリアル用のLin4Neuroをダウンロードします"
@@ -47,8 +48,20 @@ if [ ! -e ${L4N} ]; then
   done
 fi
     
-  echo "${L4N} を生成します"
+echo "${L4N} を生成します"
+cat ${base}-?? > ${L4N}
+
+echo "${L4N} を検証します"
+curl -O ${L4Nmd5}
+
+openssl md5 ${L4N} | cmp ${L4N}.md5 -
+while [ $? -ne 0 ]; do
+  echo "ファイルサイズが一致しません"
+  echo "再度結合します"
   cat ${base}-?? > ${L4N}
+  openssl md5 ${L4N} | cmp ${L4N}.md5 -
+done
+echo "正しく${L4N}が生成されました"
 
 #Delete temporary files
 [ -e L4N-1804-abis-split-00 ] && rm ${base}-*
