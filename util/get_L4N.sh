@@ -46,10 +46,10 @@ if [ ! -e ${L4N} ]; then
     done
   echo "ファイルサイズが一致しました"
   done
-fi
     
-echo "${L4N} を生成します"
-cat ${base}-?? > ${L4N}
+  echo "${L4N} を生成します"
+  cat ${base}-?? > ${L4N}
+fi
 
 echo "${L4N} を検証します"
 curl -O ${L4Nmd5}
