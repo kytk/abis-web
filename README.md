@@ -51,8 +51,8 @@
 - チュートリアルはZoomにて開催します
 - Zoomは2020年12月12日現在、バージョン5.4.6になっています。こちらを入手してください
     - 以下のリンクをクリックすることで、最新版のZoomを入手できます。(すでにインストールされている方でも以下をクリックすることでアップデートできます)
-    - Windows: https://zoom.us/client/latest/ZoomInstaller.exe
-    - macOS: https://zoom.us/client/latest/Zoom.pkg
+    - Windows: [https://zoom.us/client/latest/ZoomInstaller.exe](https://zoom.us/client/latest/ZoomInstaller.exe)
+    - macOS: [https://zoom.us/client/latest/Zoom.pkg](https://zoom.us/client/latest/Zoom.pkg)
 - 画面の共有の設定だけ変更すると受講しやすくなります
     - Zoomを起動し、サインインをクリックします
 
