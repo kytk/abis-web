@@ -270,16 +270,10 @@
     git pull
     ```
 
-- こうすると、`/media/sf_share/abis-202101` の下に `cheatsheet`, `textbook` といったフォルダが生成されます
+- こうすると、`/media/sf_share/abis-202101` の下に下図のようなフォルダが生成されます
 
-    ![filelist](img/filelist.png)
+    ![filelist](img/abis-202101.png)
 
-
-- `textbook` の中にテキストへのリンクが掲載されています
-
-- `cheatsheet` には、チュートリアルで皆様にタイプしていただくコマンドが記載されています
-
-- その他のフォルダは講義で使用します
 
 #### プロキシサーバーなどを使っている場合
 
