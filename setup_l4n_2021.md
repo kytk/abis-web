@@ -98,7 +98,7 @@
     - L4N-1804-abis-20201020.ovaのmd5値は、`877bcee4385adfb019397eaa8a8cef67` になります。ファイルサイズの検証にお使いください
 
         - macOSならば、`openssl md5 L4N-1804-abis-20201030.ova` で確認できます
-        - Windowsならば、PowerShellから、`Get-FileHash -Algorithm md5 L4N-1802-abis-20201030.ova` で確認できます
+        - Windowsならば、PowerShellから、`Get-FileHash -Algorithm md5 L4N-1804-abis-20201030.ova` で確認できます
 
 
 ### B. VirtualBox 6.1.16以降 のインストール (所要時間約10分) (第8回受講者はスキップ)
